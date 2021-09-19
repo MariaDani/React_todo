@@ -1,0 +1,86 @@
+$border-style: 1px solid rgba(109, 158, 130, 1);
+$button-color:  rgba(109, 158, 130, 1);
+$text-color: rgba(146, 168, 179, 1);
+$background-color: white;
+
+.App {
+    text-align: center;
+    background: $background-color;
+    width: 300px;
+    height: max-content;
+    border: $border-style;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(146, 168, 179, 1);
+    font-family: Lato;
+}
+  
+  .App h1 {
+    color: $text-color;
+  }
+  
+  .App .item-todo {
+    padding: 14px;
+    width: 250px;
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 15px;
+    background: $background-color;
+    color: $text-color;
+    border: $border-style;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .App .item-todo:last-child {
+    margin-bottom: 15px;
+  }
+  
+  .App .item-todo .item-text {
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .App input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 5px;
+    border: $border-style;
+    outline: none;
+    background: transparent;
+    margin-bottom: 15px;
+  }
+  
+  .App button {
+    padding: 13px 18px;
+    margin-left: 3px;
+    border: $border-style;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    background: $background-color;
+    color: $button-color;
+  }
+  
+  .App .item-todo .item-delete {
+    display: inline-block;
+    cursor: pointer;
+    float: right;
+    font-size: 22px;
+    position: relative;
+    left: -4px;
+    bottom: 5px;
+  }
+  
+  .item-delete img {
+    width: 15px;
+    height: 15px;
+  }
+  
+  .strike {
+    text-decoration: line-through;
+  }
+  
+  @font-face {
+    font-family: 'Lato';
+    src: local('Lato'), url(./fonts/Lato-Thin.ttf);
+  }
